@@ -3,21 +3,11 @@
 
 <p><%= @article.body %></p>
 <ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Delete", article_url(@article),
+  <li><%= link_to "Edit", edit_news_paper_article_path(@article) %></li>
+  <li><%= link_to "Delete", news_paper_article_path(@article),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></li>
-  <li><%= link_to "Home", articles_url(@article) %></li>
+  <li><%= link_to "Home", news_paper_articles_path(@article) %></li>
  
-  <% flash.each do |type, msg| %>
-    <div>
-      <%= msg %>
-    </div>
-  <% end %>
 </ul>
 
-<h2>Comments</h2>
-<%= render  @article.comments %>  
-
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>

@@ -1,0 +1,11 @@
+<h1>NewsPapers</h1>
+<h2>You can now create yours own Newspaper!</h2>
+<ul>
+  <% @newspapers.each do |newspaper| %>
+    <li>
+    <%= link_to newspaper.name, news_paper_articles_path(news_paper_id: newspaper.id) %>
+  </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Newspaper", new_news_paper_path %>

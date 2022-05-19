@@ -4,12 +4,11 @@
 
 <h1>Articles</h1>
 <ul>
-  <% @article.each do |article| %>
+  <% @newspaper.articles.each do |article| %>
     <li>
-      <a href="/articles/<%= article.id %>">
-        <%= article.title %>
+    <%= link_to article.title, news_paper_article_path(news_paper_id: @newspaper.id, id: article.id) %>
       </a>
     </li>
   <% end %>
 </ul>
-<%= link_to "New Article", new_article_path %>
+<%= link_to "New Article", new_news_paper_article_path %>

@@ -1,28 +1,28 @@
 class ArticlesController < ApplicationController
   include ActionController::MimeResponds
-
-
-   
     before_action :welcome_artical, only: [:new]
     after_action :blog_created, only: [:create]
     
     def index
-        @article = Article.all
+        @newspaper = NewsPaper.find(params[:news_paper_id])
+        @articles = @newspaper.articles
       end
     
       def show
+        @newspaper = NewsPaper.find(params[:news_paper_id])
         @article = Article.find(params[:id])
       end
     
       def new
-        @article = Article.new
+        @newspapers = NewsPaper.find(params[:news_paper_id])
+        @article = @newspapers.articles.new
       end
     
       def create
+        @newspapers = NewsPaper.find(params[:news_paper_id])
         @article = Article.new(article_params)
-    
-        if @article.save
-          redirect_to @article
+        if @article.save!
+          redirect_to news_paper_articles_path
         else
           render :new
         end
@@ -64,6 +64,7 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :body)
+    params.require(:article).permit(:title, :body ,:news_paper_id)
   end
+  
 end

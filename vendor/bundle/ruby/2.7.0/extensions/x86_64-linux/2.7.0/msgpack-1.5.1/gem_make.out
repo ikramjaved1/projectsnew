@@ -1,5 +1,5 @@
 current directory: /home/dua/www/projects/blog/vendor/bundle/ruby/2.7.0/gems/msgpack-1.5.1/ext/msgpack
-/home/dua/.rvm/rubies/ruby-2.7.4/bin/ruby -I /home/dua/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220510-16732-3mno73.rb extconf.rb
+/home/dua/.rvm/rubies/ruby-2.7.4/bin/ruby -I /home/dua/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220517-8525-1cmy218.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... yes
 checking for rb_enc_interned_str() in ruby.h... no
@@ -26,4 +26,4 @@ linking shared-object msgpack/msgpack.so
 
 current directory: /home/dua/www/projects/blog/vendor/bundle/ruby/2.7.0/gems/msgpack-1.5.1/ext/msgpack
 make DESTDIR\= install
-/usr/bin/install -m 0755 msgpack.so ./.gem.20220510-16732-y0s0zi/msgpack
+/usr/bin/install -m 0755 msgpack.so ./.gem.20220517-8525-9bvzqj/msgpack

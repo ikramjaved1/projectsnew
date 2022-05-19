@@ -1,5 +1,5 @@
 current directory: /home/dua/www/projects/blog/vendor/bundle/ruby/2.7.0/gems/nio4r-2.5.8/ext/nio4r
-/home/dua/.rvm/rubies/ruby-2.7.4/bin/ruby -I /home/dua/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220510-16732-fubkvt.rb extconf.rb
+/home/dua/.rvm/rubies/ruby-2.7.4/bin/ruby -I /home/dua/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220517-8525-1xjqfmm.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... yes
 checking for linux/io_uring.h... yes
@@ -58,4 +58,4 @@ linking shared-object nio4r_ext.so
 
 current directory: /home/dua/www/projects/blog/vendor/bundle/ruby/2.7.0/gems/nio4r-2.5.8/ext/nio4r
 make DESTDIR\= install
-/usr/bin/install -m 0755 nio4r_ext.so ./.gem.20220510-16732-1mxzmv4
+/usr/bin/install -m 0755 nio4r_ext.so ./.gem.20220517-8525-1pv63mt

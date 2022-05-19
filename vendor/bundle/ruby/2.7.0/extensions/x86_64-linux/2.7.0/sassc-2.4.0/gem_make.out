@@ -1,5 +1,5 @@
 current directory: /home/dua/www/projects/blog/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
-/home/dua/.rvm/rubies/ruby-2.7.4/bin/ruby -I /home/dua/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220510-16732-1hlm7lw.rb extconf.rb
+/home/dua/.rvm/rubies/ruby-2.7.4/bin/ruby -I /home/dua/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220517-8525-2cf4d7.rb extconf.rb
 creating Makefile
 
 current directory: /home/dua/www/projects/blog/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
@@ -77,4 +77,4 @@ linking shared-object sassc/libsass.so
 
 current directory: /home/dua/www/projects/blog/vendor/bundle/ruby/2.7.0/gems/sassc-2.4.0/ext
 make DESTDIR\= install
-/usr/bin/install -m 0755 libsass.so ./.gem.20220510-16732-1qv3vm6/sassc
+/usr/bin/install -m 0755 libsass.so ./.gem.20220517-8525-1on8ilo/sassc

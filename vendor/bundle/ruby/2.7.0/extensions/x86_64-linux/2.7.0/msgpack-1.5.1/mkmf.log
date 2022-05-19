@@ -67,7 +67,7 @@ checked program was:
 /* end */
 
 "gcc -o conftest -I/home/dua/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/x86_64-linux -I/home/dua/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0/ruby/backward -I/home/dua/.rvm/rubies/ruby-2.7.4/include/ruby-2.7.0 -I.    -g -O2 -fPIC conftest.c  -L. -L/home/dua/.rvm/rubies/ruby-2.7.4/lib -Wl,-rpath,/home/dua/.rvm/rubies/ruby-2.7.4/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic     -Wl,-rpath,'/../lib' -Wl,-rpath,'/../lib' -lruby  -lm   -lc"
-/usr/bin/ld: /tmp/ccmZi5Gu.o: in function `t':
+/usr/bin/ld: /tmp/ccrBYWgt.o: in function `t':
 /home/dua/www/projects/blog/vendor/bundle/ruby/2.7.0/gems/msgpack-1.5.1/ext/msgpack/conftest.c:17: undefined reference to `rb_enc_interned_str'
 collect2: error: ld returned 1 exit status
 checked program was:
