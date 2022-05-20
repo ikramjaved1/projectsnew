@@ -5,6 +5,10 @@
     <li>
     <%= link_to newspaper.name, news_paper_articles_path(news_paper_id: newspaper.id) %>
   </li>
+
+<%= link_to "Delete",news_paper_path(newspaper),
+method: :delete,
+data: { confirm: "Are you sure?" } %>
   <% end %>
 </ul>
 

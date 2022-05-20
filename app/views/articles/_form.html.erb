@@ -1,4 +1,4 @@
-<%= form_with(model: [ @newspapers, @newspapers.articles.build ], local: true) do |form| %>
+<%= form_with(model: [ @newspaper, @article ], local: true) do |form| %>
     <div>
       <%= form.label :title %><br>
       <%= form.text_field :title %>

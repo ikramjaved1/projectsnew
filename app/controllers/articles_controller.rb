@@ -10,17 +10,17 @@ class ArticlesController < ApplicationController
     
       def show
         @newspaper = NewsPaper.find(params[:news_paper_id])
-        @article = Article.find(params[:id])
+        @article = @newspaper.articles.find(params[:id])
       end
     
       def new
-        @newspapers = NewsPaper.find(params[:news_paper_id])
-        @article = @newspapers.articles.new
+        @newspaper = NewsPaper.find(params[:news_paper_id])
+        @article = @newspaper.articles.new
       end
     
       def create
-        @newspapers = NewsPaper.find(params[:news_paper_id])
-        @article = Article.new(article_params)
+        @newspaper = NewsPaper.find(params[:news_paper_id])
+        @article = @newspaper.articles.create(article_params)
         if @article.save!
           redirect_to news_paper_articles_path
         else
@@ -29,14 +29,16 @@ class ArticlesController < ApplicationController
       end
 
   def edit
-    @article = Article.find(params[:id])
+    @newspaper = NewsPaper.find(params[:news_paper_id])
+    @article = @newspaper.articles.find(params[:id])
   end
 
   def update
+    @newspaper = NewsPaper.find(params[:news_paper_id])
     @article = Article.find(params[:id])
 
     if @article.update(article_params)
-      redirect_to @article
+      redirect_to news_paper_article_path(@newspaper, @article)
     else
       render :edit
     end

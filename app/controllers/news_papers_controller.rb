@@ -17,6 +17,11 @@ class NewsPapersController < ApplicationController
       render :new
     end
   end
+  def destroy
+    @newspaper = NewsPaper.find(params[:id])
+    @newspaper.destroy
+    redirect_to news_papers_path
+  end
 
   private
     def news_paper_params
